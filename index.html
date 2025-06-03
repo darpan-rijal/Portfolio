@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="icon" href="faviconicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assests/css/index.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="logo"><a href="/">Darpan Rijal</a></div>
+      <nav>
+        <ul>
+          <div class="nav1">
+            <a href="./index.html">
+              <li class="navbar">Home</li>
+            </a>
+          </div>
+          <div class="nav2">
+            <a href="about.html">
+              <li class="navbar">About Us</li>
+            </a>
+          </div>
+          <div class="nav3">
+            <a href="contact.html">
+              <li class="navbar">Contact Us</li>
+            </a>
+          </div>
+          <div class="nav4">
+            <li>
+              <svg class="filesvg" id="filesvg" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg"
+                height="25px" viewBox="0 -960 960 960" width="25px" fill="black">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="mainSidebar" style="display: none !important;">
+        <div class="sidebarAll">
+          <div class="outsideclose" onclick="myFunction()"></div>
+          <div class="sidebarbackground">
+            <nav>
+              <ul>
+                <div class="sidenav4 filesvgc" id="filesvgc">
+                  <li>
+                    <svg style="cursor: pointer; color: white;" xmlns="http://www.w3.org/2000/svg" height="24px"
+                      viewBox="0 -960 960 960" width="27px" fill="white">
+                      <path
+                        d="M480-390 334-244q-20 20-45 19.5T245-245q-20-20-20-45t20-45l145-145-146-147q-20-20-19.5-45t20.5-45q19-20 44.5-20t45.5 20l145 146 146-146q20-20 45.5-20t44.5 20q20 20 20 45t-20 45L570-480l146 146q20 20 20 44.5T716-245q-19 20-44.5 20T626-245L480-390Z" />
+                    </svg>
+                  </li>
+                </div>
+                <div class="sidenav1">
+                  <a href="./index.html">
+                    <li class="navbar">Home</li>
+                  </a>
+                </div>
+                <div class="sidenav2">
+                  <a href="about.html">
+                    <li class="navbar">About Us</li>
+                  </a>
+                </div>
+                <div class="sidenav3">
+                  <a href="contact.html">
+                    <li class="navbar">Contact Us</li>
+                  </a>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="profileimg">
+        <img src="./media/darpan.jpg" alt="Profile Pic" />
+      </div>
+      <div class="text">
+        <div class="p1">
+          <p class="first">Hello I'm</p>
+        </div>
+        <div class="p2">
+          <h1>
+            <p>Darpan Rijal</p>
+          </h1>
+        </div>
+        <div class="p3">
+          <p class="final">Wanna Know About Me!</p>
+        </div>
+        <div class="buttons">
+          <button class="btn1">Download CV</button>
+          <a href="/about.html"><button class="btn2">Get Info</button></a>
+        </div>
+        <div class="socialmedia">
+          <a href="https://github.com/Darpanrijal" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/darpan-rijal-4997691b0/" class="fa fa-linkedin"></a>
+          <a href="https://www.facebook.com/darpan.rzl.3" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/darpan0942/" class="fa fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./assests/js/sidebar.js" defer></script>
+  <script>
+    function myFunction() {
+      document.querySelector(".mainSidebar").style.setProperty("display", "none", "important");
+    }
+  </script>
+</body>
+</html>

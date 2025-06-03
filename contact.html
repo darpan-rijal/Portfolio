@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="icon" href="faviconicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assests/css/contact.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="logo"><a href="/">Darpan Rijal</a></div>
+      <nav>
+        <ul>
+          <div class="nav1">
+            <a href="./index.html">
+              <li class="navbar">Home</li>
+            </a>
+          </div>
+          <div class="nav2">
+            <a href="about.html">
+              <li class="navbar">About Us</li>
+            </a>
+          </div>
+          <div class="nav3">
+            <a href="contact.html">
+              <li class="navbar">Contact Us</li>
+            </a>
+          </div>
+          <div class="nav4">
+            <li>
+              <svg class="filesvg" id="filesvg" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg"
+                height="25px" viewBox="0 -960 960 960" width="25px" fill="black">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container2">
+    <div class="mainSidebar" style="display: none !important;">
+      <div class="sidebarAll">
+        <div class="outsideclose" onclick="myFunction()"></div>
+        <div class="sidebarbackground">
+          <nav>
+            <ul>
+              <div class="sidenav4 filesvgc" id="filesvgc">
+                <li>
+                  <svg style="cursor: pointer; color: white;" xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="27px" fill="white">
+                    <path
+                      d="M480-390 334-244q-20 20-45 19.5T245-245q-20-20-20-45t20-45l145-145-146-147q-20-20-19.5-45t20.5-45q19-20 44.5-20t45.5 20l145 146 146-146q20-20 45.5-20t44.5 20q20 20 20 45t-20 45L570-480l146 146q20 20 20 44.5T716-245q-19 20-44.5 20T626-245L480-390Z" />
+                  </svg>
+                </li>
+              </div>
+              <div class="sidenav1">
+                <a href="./index.html">
+                  <li class="navbar">Home</li>
+                </a>
+              </div>
+              <div class="sidenav2">
+                <a href="about.html">
+                  <li class="navbar">About Us</li>
+                </a>
+              </div>
+              <div class="sidenav3">
+                <a href="contact.html">
+                  <li class="navbar">Contact Us</li>
+                </a>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="title">
+      <p>Contact Us</p>
+    </div>
+  </div>
+  <form action="">
+    <div class="card">
+      <div class="cardinside">
+        <a href="https://www.facebook.com/darpan.rzl.3">
+          <div class="cardfb fa fa-facebook">
+            <div class="cardtxt">Facebook</div>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/darpan0942/">
+          <div class="cardinsta fa fa-instagram">
+            <div class="cardtxt">Instagram</div>
+          </div>
+        </a>
+        <a href="mailto:youremail@example.com">
+          <div class="cardgmail fa fa-envelope">
+            <div class="cardtxt">Gmail</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/darpan-rijal-4997691b0/">
+          <div class="cardlinkedin fa fa-linkedin">
+            <div class="cardtxt">Linked In</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="sidelinesPlusText">
+      <div class="sideline"></div>
+      <div class="midtext">OR</div>
+      <div class="sideline"></div>
+    </div>
+    <div class="bottomPart">
+      <div class="nameandinput">
+        <div class="lableAndName">
+          <label for="name">Name: </label>
+          <input type="text" placeholder="Enter your Full Name" required>
+        </div>
+        <div class="lableAndName">
+          <label for="email">Email: </label>
+          <input type="email" placeholder="Enter your Email Address" required>
+        </div>
+        <div class="lableAndName">
+          <label for="phoneno">Phone No: </label>
+          <input type="tel" placeholder="Enter your Phone Number">
+        </div>
+        <div class="lableAndName">
+          <label for="subject">Subject: </label>
+          <input type="text" placeholder="Enter the Title of your work" required>
+        </div>
+        <div class="lableAndName">
+          <label for="description">Description: </label>
+          <div class="resizeinput"><textarea placeholder="Describe your work here" rows="4" cols="71"
+              required></textarea></div>
+        </div>
+      </div>
+    </div>
+    <div class="btn btncontactform" id="btncontactform"><button>Submit</button></div>
+  </form>
+  <script src="./assests/js/sidebar.js" defer></script>
+  <script>
+    document.getElementById("btncontactform").addEventListener("click", function (e) {
+      alert("Our contact form is currently unavailable. Please reach out to us via the social media options above. We truly appreciate your understanding.   Thank you!");
+      e.preventDefault();
+    });
+    function myFunction() {
+      document.querySelector(".mainSidebar").style.setProperty("display", "none", "important");
+    }
+  </script>
+</body>
+
+</html>

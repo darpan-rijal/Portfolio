@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #e4f0ff;
+    overflow: visible;
+    position: relative;
+}
+
+.logo a {
+    position: relative;
+    width: max-content;
+}
+
+.logo a::after,
+.logo a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.logo a::after {
+    background: linear-gradient(135deg, #e14fad 10%, #f9d423 100%);
+}
+
+.logo a::before {
+    background: linear-gradient(135deg, #0e2cf0 10%, #d71372 100%);
+}
+
+.logo a:hover::after {
+    opacity: 0;
+}
+
+.logo a:hover::before {
+    opacity: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+}
+
+.header a {
+    color: black;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+header li a {
+    color: black;
+}
+
+.filesvg {
+    display: none;
+}
+
+li {
+    margin-right: 1rem;
+}
+
+.nav1,
+.nav2,
+.nav3 {
+    width: auto;
+    height: 100%;
+}
+
+.nav1:hover {
+    background-color: lightgray;
+}
+
+.nav2:hover {
+    background-color: lightgray;
+}
+
+.nav3:hover {
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*------------------------------------------- Sidebar--------------------------------------------------------- */
+.sidebarAll {
+    width: 100dvw;
+    height: 100dvh;
+    padding: 0px !important;
+    margin: 0px !important;
+    background-color: #00000011;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    right: 0px;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 300px)) !important;
+    grid-template-rows: auto !important;
+}
+
+.outsideclose {
+    width: 100dvw;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 6;
+    left: 0;
+}
+
+.sidebarbackground {
+    height: 100dvh;
+    background-color: #020a0e;
+    cursor: default;
+    position: relative;
+    z-index: 6;
+}
+
+.sidebarbackground nav ul {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    z-index: 7;
+}
+
+.sidenav1:hover {
+    background-color: rgba(211, 211, 211, 0.381);
+    font-size: 1.2rem;
+}
+
+/* .sidenav1 a:hover {
+    color: #000;
+} */
+.sidenav2:hover {
+    background-color: rgba(211, 211, 211, 0.381);
+    font-size: 1.2rem;
+}
+
+/* .sidenav2 a:hover {
+    color: #000;
+} */
+.sidenav3:hover {
+    background-color: rgba(211, 211, 211, 0.381);
+    font-size: 1.2rem;
+}
+
+/* .sidenav3 a:hover {
+    color: #000;
+} */
+
+.sidebarbackground .sidenav4,
+.sidebarbackground .sidenav3,
+.sidebarbackground .sidenav2,
+.sidebarbackground .sidenav1 {
+    width: 100%;
+}
+
+.sidebarbackground a {
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 5;
+}
+
+.sidenav4 {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sidenav4 svg {
+    margin-top: 10px;
+    fill: white;
+}
+
+/* ----------------------------------------------------SIDEBAR END------------------------------------------------------------ */
+.profileimg {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 10vh 0%;
+    margin-top: 7vh;
+}
+
+.profileimg img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 90%;
+}
+
+@media (max-width: 600px) {
+    .profileimg img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .profileimg img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .filesvg {
+        display: block;
+
+    }
+
+    .nav1,
+    .nav2,
+    .nav3 {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: white;
+    }
+
+    .sidebarbackground .sidenav4,
+    .sidebarbackground .sidenav3,
+    .sidebarbackground .sidenav2,
+    .sidebarbackground .sidenav1 {
+        display: block;
+    }
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 50px;
+    margin: 20px 0px;
+}
+
+.btn2 {
+    background-color: black;
+    color: white;
+    width: 15ch;
+    height: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+
+.btn2:hover {
+    box-shadow: 2px 3px 50px rgb(177, 33, 234);
+    transform: scale(1.03);
+}
+
+.btn1 {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 15ch;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1::after {
+    content: "";
+    width: 0ch;
+    height: 35px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #e14fad 10%, #f9d423 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: width 150ms ease-in-out, box-shadow 150ms ease-in-out;
+    z-index: -1;
+}
+
+.btn1:hover::after {
+    width: 15ch;
+}
+
+.btn1:hover {
+    box-shadow: 2px 3px 50px rgb(177, 33, 234);
+    transform: scale(1.03);
+    /* color: white; */
+}
+
+.socialmedia a {
+    margin: 0px 20px;
+    color: #000;
+}
+
+.p1 {
+    color: #240d05e1;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.p2 {
+    font-size: 2rem;
+    line-height: 30px;
+    color: #510400;
+}
+
+.p3 {
+    color: #240d05e1;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.fa {
+    font-size: 20px;
+}
+
+.fa:hover {
+    transform: scale(1.12);
+}
