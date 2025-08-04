@@ -843,6 +843,8 @@ header li a {
     width: 100%;
     height: auto;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #3e65ff1c;
     display: flex;
     flex-direction: column;
@@ -852,7 +854,7 @@ header li a {
 }
 
 .edu1 {
-    width: 92% !important;
+    width: 100% !important;
     min-height: 100px;
     max-height: auto;
     background-color: white;
@@ -1033,7 +1035,8 @@ header li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
-    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     place-items: center;
 }
 
@@ -1045,7 +1048,7 @@ header li a {
     row-gap: 10px;
     column-gap: 10px;
     border-radius: 5px;
-    width: 92% !important;
+    width: 100% !important;
     height: 100% !important;
     justify-content: center;
     align-items: center;
