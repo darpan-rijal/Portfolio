@@ -484,8 +484,8 @@ header li a {
     font-weight: 600;
     letter-spacing: 2px;
     background-color: rgba(184, 197, 255, 0.204);
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .hiremeSection {
@@ -493,7 +493,7 @@ header li a {
     justify-content: center;
     column-gap: 50px;
     background-color: rgba(184, 197, 255, 0.204);
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     border-bottom: 1px solid black;
 }
 
@@ -533,7 +533,6 @@ header li a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 49.9%;
     flex-wrap: wrap;
 }
 
@@ -579,6 +578,23 @@ header li a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .line1 {
+ border: none;
+  border-top: 1px dashed gray;
+  width: 100%;
+  margin: 20px 0;
+}
+    .adjustHiermeSize{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hiremeDetails{
+        align-items: center;
+    }
 }
 
 .skill {
@@ -826,7 +842,7 @@ header li a {
 .education {
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding-bottom: 20px;
     background-color: #3e65ff1c;
     display: flex;
     flex-direction: column;
@@ -836,7 +852,7 @@ header li a {
 }
 
 .edu1 {
-    width: 70vw;
+    width: 100%;
     min-height: 100px;
     max-height: auto;
     background-color: white;
@@ -851,6 +867,12 @@ header li a {
     padding: 10px;
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.14);
     transition: transform .3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .edu1{
+        width: 80%;
+    }
 }
 
 .edu1:hover {
@@ -926,7 +948,6 @@ header li a {
     /* grid-template-columns: repeat(3, 300px); */
     /* grid-template-columns: repeat(auto-fit, 300px); */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(3, 1fr);
     gap: 30px;
     background-color: rgba(157, 244, 227, 0.088);
     border-radius: 2px;
@@ -1185,4 +1206,3 @@ footer {
 footer a:hover {
     color: #74e0f8 !important;
 }
-
