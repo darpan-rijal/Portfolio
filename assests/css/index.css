@@ -14,7 +14,7 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     background: #e4f0ff;
-    overflow: visible;
+    overflow-x: hidden; /* Prevent horizontal scroll */
     position: relative;
 }
 
@@ -56,6 +56,7 @@ body {
     width: 100%;
     background-color: white;
     align-items: center;
+    text-align: center;
 }
 
 .header a {
@@ -66,9 +67,6 @@ body {
     padding: 10px;
 }
 
-.navbar {
-    padding: 10px;
-}
 
 ul {
     list-style: none;
@@ -83,15 +81,14 @@ header li a {
     display: none;
 }
 
-li {
-    margin-right: 1rem;
-}
-
 .nav1,
 .nav2,
 .nav3 {
     width: auto;
+    text-align: center;
     height: 100%;
+    padding: 8px 26px;
+    transition: background-color 0.3s ease;
 }
 
 .nav1:hover {
@@ -111,6 +108,7 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 
 /*------------------------------------------- Sidebar--------------------------------------------------------- */
@@ -148,6 +146,7 @@ li {
     cursor: default;
     position: relative;
     z-index: 6;
+    min-width: 250px;
 }
 
 .sidebarbackground nav ul {
@@ -157,6 +156,7 @@ li {
     align-items: flex-start;
     position: relative;
     z-index: 7;
+    padding: 20px;
 }
 
 .sidenav1:hover {
@@ -164,31 +164,25 @@ li {
     font-size: 1.2rem;
 }
 
-/* .sidenav1 a:hover {
-    color: #000;
-} */
 .sidenav2:hover {
     background-color: rgba(211, 211, 211, 0.381);
     font-size: 1.2rem;
 }
 
-/* .sidenav2 a:hover {
-    color: #000;
-} */
 .sidenav3:hover {
     background-color: rgba(211, 211, 211, 0.381);
     font-size: 1.2rem;
 }
-
-/* .sidenav3 a:hover {
-    color: #000;
-} */
 
 .sidebarbackground .sidenav4,
 .sidebarbackground .sidenav3,
 .sidebarbackground .sidenav2,
 .sidebarbackground .sidenav1 {
     width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .sidebarbackground a {
@@ -215,13 +209,13 @@ li {
 
 /* ----------------------------------------------------SIDEBAR END------------------------------------------------------------ */
 .profileimg {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    margin: 10vh 0%;
+    margin: 10vh 0;
     margin-top: 7vh;
 }
 
@@ -229,25 +223,191 @@ li {
     width: 280px;
     height: 280px;
     object-fit: cover;
-    border-radius: 90%;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn2 {
+    background-color: black;
+    color: white;
+    width: 15ch;
+    min-width: 120px;
+    height: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn2:hover {
+    box-shadow: 2px 3px 50px rgb(177, 33, 234);
+    transform: scale(1.03);
+}
+
+.btn1 {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 15ch;
+    min-width: 120px;
+    height: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1::after {
+    content: "";
+    width: 0;
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #e14fad 10%, #f9d423 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 150ms ease-in-out, box-shadow 150ms ease-in-out;
+    z-index: -1;
+}
+
+.btn1:hover::after {
+    width: 100%;
+}
+
+.btn1:hover {
+    box-shadow: 2px 3px 50px rgb(177, 33, 234);
+    transform: scale(1.03);
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.socialmedia a {
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+.p1 {
+    color: #240d05e1;
+    font-weight: 600;
+    font-size: clamp(1.2rem, 4vw, 1.5rem); /* Responsive font size */
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.p2 {
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Responsive font size */
+    line-height: 1.4;
+    color: #510400;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.p3 {
+    color: #240d05e1;
+    font-weight: 600;
+    font-size: clamp(1.2rem, 4vw, 1.5rem); /* Responsive font size */
+    margin-top: 40px;
+    word-wrap: break-word;
+}
+
+.fa {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.fa:hover {
+    transform: scale(1.12);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .profileimg img {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .buttons {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn1, .btn2 {
+        width: 200px;
+        min-width: unset;
+    }
+    
+    .socialmedia {
+        gap: 30px;
+    }
+    
+    .fa {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 600px) {
     .profileimg img {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .header {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    
+    .text {
+        padding: 0 15px;
     }
 }
 
 @media (max-width: 900px) {
     .profileimg img {
-        width: 200px;
-        height: 200px;
+        width: 240px;
+        height: 240px;
     }
 
     .filesvg {
         display: block;
-
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .filesvg:hover {
+        background-color: lightgray;
     }
 
     .nav1,
@@ -261,6 +421,7 @@ li {
         justify-content: space-between;
         width: 100%;
         background-color: white;
+        padding: 0px 10px;
     }
 
     .sidebarbackground .sidenav4,
@@ -269,100 +430,32 @@ li {
     .sidebarbackground .sidenav1 {
         display: block;
     }
-
 }
 
-.text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.buttons {
-    display: flex;
-    column-gap: 50px;
-    margin: 20px 0px;
-}
-
-.btn2 {
-    background-color: black;
-    color: white;
-    width: 15ch;
-    height: 35px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: box-shadow 0.5s;
-}
-
-.btn2:hover {
-    box-shadow: 2px 3px 50px rgb(177, 33, 234);
-    transform: scale(1.03);
-}
-
-.btn1 {
-    background-color: transparent;
-    border: 2px solid black;
-    border-radius: 30px;
-    width: 15ch;
-    cursor: pointer;
-    transition: box-shadow 0.5s;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn1::after {
-    content: "";
-    width: 0ch;
-    height: 35px;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #e14fad 10%, #f9d423 100%);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    transition: width 150ms ease-in-out, box-shadow 150ms ease-in-out;
-    z-index: -1;
-}
-
-.btn1:hover::after {
-    width: 15ch;
-}
-
-.btn1:hover {
-    box-shadow: 2px 3px 50px rgb(177, 33, 234);
-    transform: scale(1.03);
-    /* color: white; */
-}
-
-.socialmedia a {
-    margin: 0px 20px;
-    color: #000;
-}
-
-.p1 {
-    color: #240d05e1;
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.p2 {
-    font-size: 2rem;
-    line-height: 30px;
-    color: #510400;
-}
-
-.p3 {
-    color: #240d05e1;
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin-top: 40px;
-}
-
-.fa {
-    font-size: 20px;
-}
-
-.fa:hover {
-    transform: scale(1.12);
+@media (max-width: 400px) {
+    .profileimg img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .p1 {
+        margin-bottom: 15px;
+    }
+    
+    .p3 {
+        margin-top: 30px;
+    }
+    
+    .buttons {
+        margin: 15px 0;
+    }
+    
+    .btn1, .btn2 {
+        width: 180px;
+        height: 40px;
+    }
+    
+    .socialmedia {
+        gap: 25px;
+    }
 }
