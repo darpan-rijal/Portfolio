@@ -852,7 +852,7 @@ header li a {
 }
 
 .edu1 {
-    width: 98%;
+    width: 92% !important;
     min-height: 100px;
     max-height: auto;
     background-color: white;
@@ -1032,10 +1032,9 @@ header li a {
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 20px;
+    gap: 20px;
+    padding: 10px;
+    place-items: center;
 }
 
 .c1 {
@@ -1046,8 +1045,8 @@ header li a {
     row-gap: 10px;
     column-gap: 10px;
     border-radius: 5px;
-    width: 98%;
-    height: 100%;
+    width: 92% !important;
+    height: 100% !important;
     justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 12px 0.1px rgba(6, 6, 19, 0.055);
@@ -1203,6 +1202,7 @@ footer {
     padding-top: 2px;
     padding-bottom: 2px;
 }
+
 footer a:hover {
     color: #74e0f8 !important;
 }
