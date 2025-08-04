@@ -78,15 +78,12 @@ header li a {
     color: black;
 }
 
-li {
-    margin-right: 1rem;
-}
-
 .nav1,
 .nav2,
 .nav3 {
     width: auto;
     height: 100%;
+    padding: 2px 10px;
 }
 
 .nav1:hover {
