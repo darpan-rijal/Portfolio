@@ -119,6 +119,7 @@ header li a {
         justify-content: space-between;
         width: 100%;
         background-color: white;
+        padding: 0px 15px;
     }
 
     .sidebarbackground .sidenav4,
@@ -447,7 +448,7 @@ header li a {
         justify-content: space-between;
         width: 100%;
         background-color: white;
-        padding: 0px 10px;
+        padding: 0px 15px;
     }
 
     .sidebarbackground .sidenav4,
