@@ -1035,24 +1035,27 @@ header li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
+    padding: 20px;
     width: 100%;
     place-items: center;
 }
 
 .c1 {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 130px 1fr;
-    background-color: white;
-    row-gap: 10px;
-    column-gap: 10px;
-    border-radius: 5px;
-    width: 92% !important;
-    height: 100% !important;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 12px 0.1px rgba(6, 6, 19, 0.055);
-    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 130px 1fr;
+  background-color: white;
+  row-gap: 10px;
+  column-gap: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 5px 5px 12px 0.1px rgba(6, 6, 19, 0.055);
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .c1:hover {
